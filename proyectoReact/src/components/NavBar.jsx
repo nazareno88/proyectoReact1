@@ -1,9 +1,10 @@
+import CartWidget from "./CartWidget"
+import ItemListContainer from "./ItemListContainer"
 import procesador from "../assets/images/procesador.png"
-import CartWidget from "./cartWidget"
-import ItemListContainer from "./itemListContainer"
 
-const navbar = () => {
-    return (<>
+const NavBar = () => {
+    return (
+    <>
     <div className="nav-container">
         <div className="nav-items">
             
@@ -18,10 +19,11 @@ const navbar = () => {
                 <button className="btn btn-primary">Buscar</button>
                </div>
 
-                <CartWidget/>
+                <CartWidget />
 
         </div>
     </div>
-    </>)
+    </>
+    )
 }
-export default navbar
+export default NavBar
