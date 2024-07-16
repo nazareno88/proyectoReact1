@@ -1,6 +1,6 @@
 import CartWidget from "./CartWidget"
-import ItemListContainer from "./ItemListContainer"
 import procesador from "../assets/images/procesador.png"
+import ContainerLink from "./ContainerLink"
 
 const NavBar = () => {
     return (
@@ -11,7 +11,7 @@ const NavBar = () => {
                 <div className="nav-links">
                 <h3>Hardworld</h3>
                 <img src={procesador} alt="logo" />
-                  <ItemListContainer inicio={"Inicio"} componentes={"Componentes"} perisfericos={"Perisfericos"} accesorios={"Accesorios"} nosotros={"Nosotros"}/>
+                  <ContainerLink inicio={"Inicio"} componentes={"Componentes"} perisfericos={"Perisfericos"} accesorios={"Accesorios"} nosotros={"Nosotros"}/>
                 </div>
 
                <div className="nav-search">
