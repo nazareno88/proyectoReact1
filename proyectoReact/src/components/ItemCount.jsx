@@ -19,7 +19,7 @@ const ItemCount = ({ stock , onAdd }) => {
 
     const agregarAlCarrito = () => {
         if (contador <= stock) {
-            // onAdd(contador)
+            onAdd(contador)
             console.log(`Agregado al carrito: ${contador} productos`)
             setContador(1)
             setVisible(false)

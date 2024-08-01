@@ -1,7 +1,15 @@
 import "../styles/detail.css"
 import ItemCount from "./ItemCount"
+import { CartContext } from "./CartContext"
+import { useContext } from "react"
 
 const ItemDetail = ({ producto }) => {
+
+    const {addItem} = useContext(CartContext);
+    const onAdd = (quantity) => {
+      addItem(item, quantity);
+    }
+
     return (
         <div className="container">
             <div className="img-card"></div>
@@ -11,7 +19,7 @@ const ItemDetail = ({ producto }) => {
              <p>{producto.description}</p>
              <p><b>${producto.price}</b></p>
              <div className="btn-card">
-                <ItemCount stock={producto.stock}/>
+                <ItemCount stock={producto.stock}  onAdd={onAdd}/>
              </div>
              
         </div>
