@@ -3,6 +3,7 @@ import listaProductos from "../json/productos.json"
 import ItemList from "./ItemList"
 import { useParams } from "react-router-dom"
 
+
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([])
     const {id} = useParams();

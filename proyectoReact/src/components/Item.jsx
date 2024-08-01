@@ -1,4 +1,4 @@
- import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import "../styles/cardContainer.css"   
 
     const Item = ({ producto }) => {
@@ -16,7 +16,7 @@ import "../styles/cardContainer.css"
             </div>
         )
     }
-    
-    
+
+
 
 export default Item
