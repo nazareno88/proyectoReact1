@@ -1,0 +1,32 @@
+ .table, tbody{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+ }
+ .cart-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-clear{
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 10px;
+    box-shadow: 2px 4px 5px gray;
+    
+}
+
+.btn-clear:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 2px 4px 5px gray;
+}
