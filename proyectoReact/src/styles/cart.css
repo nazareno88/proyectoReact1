@@ -16,7 +16,7 @@
     justify-content: space-between;
 }
 
-.btn-clear{
+.btn-clear, .checkout-btn{
     background-color: black;
     color: white;
     border: 0;
@@ -25,8 +25,9 @@
     
 }
 
-.btn-clear:hover{
+.btn-clear:hover, .checkout-btn:hover{
     background-color: white;
     color: black;
     box-shadow: 2px 4px 5px gray;
 }
+
