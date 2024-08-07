@@ -14,9 +14,10 @@
 .cart-total{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.btn-clear, .checkout-btn{
+.btn-clear{
     background-color: black;
     color: white;
     border: 0;
@@ -25,9 +26,31 @@
     
 }
 
-.btn-clear:hover, .checkout-btn:hover{
+.btn-clear:hover{
     background-color: white;
     color: black;
     box-shadow: 2px 4px 5px gray;
 }
 
+.checkout-btn{
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 10px;
+    box-shadow: 2px 4px 5px gray;
+    text-decoration: none;
+}
+
+.checkout-btn:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 2px 4px 5px gray;
+}
+
+.container-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 10px;
+    gap: 10px;
+}

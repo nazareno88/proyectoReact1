@@ -9,3 +9,13 @@
     width: 100%;
      gap: 20px;
 }
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    margin: 20px;
+}
