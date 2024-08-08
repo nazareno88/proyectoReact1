@@ -1,7 +1,8 @@
-import { useContext, useState } from "react"
-import { CartContext } from "./context/CartContext"
-import "../styles/checkout.css"
+import { useContext, useState } from "react";
+import { CartContext } from "./context/CartContext";
+import "../styles/checkout.css";
 import { addDoc, collection, getFirestore, orderBy } from "firebase/firestore";
+import { Link } from "react-router-dom";
 
 const Checkout = () => {
      
@@ -11,7 +12,7 @@ const Checkout = () => {
     const [telefono, setTelefono] = useState("");
     const [direccion, setDireccion] = useState("");
     const [ordenId, setOrdenId] = useState("");
-
+      
 
     const nOrden = () => {
         if (nombre == ""){
@@ -82,7 +83,7 @@ const Checkout = () => {
         <div className="checkout-container">
        
          <div className="form-container">
-
+            
                     <form >
                         <div className="mb-3">
                            <label htmlFor="Nombre" className="form-label">Nombre</label>
@@ -100,7 +101,7 @@ const Checkout = () => {
                            <label htmlFor="Direccion" className="form-label">Direccion</label>
                            <input type="text" className="form-control" onInput={(e)=>{setDireccion(e.target.value)}}/>
                         </div>
-                        <button type="button" className="btn btn-primary">Generar Orden</button>
+                        <button type="button" className="btn btn-primary" >Generar Orden</button>
                     </form>
                 </div>
 
